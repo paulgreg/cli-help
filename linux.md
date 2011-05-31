@@ -50,19 +50,19 @@ Bash relatives
 --------------
 
 ### Delete last word from command line
-`CTRL + W`  
+`CTRL + w`  
 
 ### Delate current line from command line
-`CTRL + U`  
+`CTRL + u`  
 
 ### Logout current terminal
-`CTRL + D`  
+`CTRL + d`  
 
 ### Recursive search
-`CTRL + R`  
+`CTRL + r`  
 
 ### Clear screen
-`CTRL + L`  
+`CTRL + l`  
 
 
 system relatives
@@ -75,7 +75,7 @@ system relatives
 `Keep Left Alt & Print Screen pressed, then R, S, E, I, U, B (Raising a Skinny Elephant Is Utterly Boring)`  
 
 ### Find broken symlinks in a specified directory
-`for i in `find MY_DIRECTORY -type l`; do [ -e $i ] || echo $i is broken; done`  
+`for i in \`find MY_DIRECTORY -type l\`; do [ -e $i ] || echo $i is broken; done`  
 
 ### Get BIOS version
 `sudo dmidecode -s bios-version`  
