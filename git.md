@@ -2,6 +2,12 @@ GIT commands
 ==============
 
 
+Config
+----------
+### Set default editor to VIM
+git config --global core.editor vim
+
+
 Commits
 --------------
 
