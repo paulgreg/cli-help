@@ -68,7 +68,10 @@ Bash relatives
 system relatives
 -----------------
 
-### display a desktop notification
+### Hash a password from command line
+echo "password_to_hash\cD" | sha1sum
+
+### Display a desktop notification
 `notify-send "Title" "This is a message"`  
 
 ### When the system's freezed :
