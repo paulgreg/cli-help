@@ -22,14 +22,14 @@ Branches
 --------------
 
 ### To cherry-pick
-`git checkout branchname`  
+`git checkout branch_name`  
 `git log`  
 then get the sha1
 `git checkout master`  
-`git cherry-pick the_sha1`  
+`git cherry-pick SHA1`  
 
 ### Update your branch from master
-`git checkout ma_branche`  
+`git checkout branch_name`  
 `git rebase master`  
 
 ### Rebase
@@ -73,6 +73,9 @@ Revert your changes
 
 ### Revert a file
 `git checkout -- FILE`  
+
+### Revert a file to a specified state
+git checkout SHA1 path/to/file.java
 
 ### Remove a file from staging area
 `git reset FILE`  
