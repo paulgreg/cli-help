@@ -86,7 +86,10 @@ git checkout SHA1 path/to/file.java
 ### Reset to master on origin
 `git reset --hard origin/master`  
 
-### Cancel a commit
+### Cancel last commit
+git reset HEAD^1
+
+### Cancel a previous commit
 `git rebase -i HEAD~2`  
 `git mergetool`  
 `git rebase --continue`  
