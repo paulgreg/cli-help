@@ -107,6 +107,11 @@ Working
 ### remove untracked files
 `git clean -f`  
 
+### Making a patch
+git diff > your-patch
+
+### Applying patch
+git apply your-patch
 
 Bissect
 --------------
