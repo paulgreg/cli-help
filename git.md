@@ -113,6 +113,9 @@ git diff > your-patch
 ### Applying patch
 git apply your-patch
 
+### See graphical view of log
+git log --graph --oneline --decorate
+
 Bissect
 --------------
 
