@@ -145,3 +145,9 @@ Update all local projects
 `   $command`  
 `   cd ..`  
 `done`  
+
+Alias
+------
+
+### Open current project on github from command line
+alias gitweb="git config --get remote.origin.url | sed -e 's/^.*github\.com./https:\/\/github.com\//' | sed -e 's/\.git$//' | xargs python -m webbrowser -t > /dev/null"
