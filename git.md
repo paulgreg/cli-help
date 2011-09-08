@@ -113,8 +113,11 @@ git diff > your-patch
 ### Applying patch
 git apply your-patch
 
-### See graphical view of log
-git log --graph --oneline --decorate
+### See graphical view of log (where X is max number of commit)
+git log --graph --oneline --decorate -n X
+
+### Remove a file from repository
+git filter-branch --tree-filter 'rm -f file-to-remove' HEAD
 
 Bissect
 --------------
