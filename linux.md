@@ -45,6 +45,8 @@ media relatives
 ### extract audio from a video (without reencoding it)
 `ffmpeg -i mandelbrot.flv -vn -acodec copy mandelbrot.mp3`  
 
+### do a screenshot later
+gnome-panel-screenshot --delay 5
 
 Bash relatives
 --------------
