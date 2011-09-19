@@ -48,6 +48,7 @@ media relatives
 ### do a screenshot later
 gnome-panel-screenshot --delay 5
 
+
 Bash relatives
 --------------
 
@@ -62,12 +63,21 @@ Bash relatives
 
 ### Recursive search
 `CTRL + r`  
+and
+`CTRL + p`  
 
 ### Clear screen
 `CTRL + l`  
 
 
-system relatives
+Sharing tips
+------------
+
+### Share a file via HTTP
+nc -v -l 8080 < file_to_share
+
+
+System relatives
 -----------------
 
 ### Hash a password from command line
