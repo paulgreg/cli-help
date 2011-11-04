@@ -7,7 +7,7 @@ vagrant package --base VirtualBoxSystemName
 ### Import that box
 vagrant box add vagrantSystemName package.box
 
-### Renove a box
+### Remove a box
 vagrant box remove vagrantSystemName
 
 ### Init a system (output is a Vagrantfile)
