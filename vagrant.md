@@ -10,7 +10,7 @@ vagrant box add vagrantSystemName package.box
 ### Renove a box
 vagrant box remove vagrantSystemName
 
-## Init a system (output is a Vagrantfile)
+### Init a system (output is a Vagrantfile)
 vagrant init vagrantSystemName
 
 ### Commands on a system
