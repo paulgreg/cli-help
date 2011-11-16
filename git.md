@@ -17,6 +17,8 @@ Commits
 ### Reset last commit
 `git reset --soft HEAD^`  
 
+### Push a single commit
+git push origin SHA1:master
 
 Branches
 --------------
