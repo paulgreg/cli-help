@@ -6,3 +6,6 @@ VIM commands
 
 ### To open a file from vim
 `:open filename`
+
+### To enable syntax
+`:syntax on`
