@@ -34,7 +34,9 @@ CTRL+n
 
 ### Visual commands
 `>` Shift right
+
 `<` Shift left
+
 `=` Auto indent
 
 ### Numbers
