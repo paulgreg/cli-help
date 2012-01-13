@@ -30,7 +30,7 @@ find relatives
 `find . -ipath './merlin-data/src/*/*.xml' -exec perl -pi -e 's/http:\/\/hibernate.sourceforge.net\//http:\/\/www.hibernate.org\/dtd\//' {} \;`  
 
 ### delete files recursively
-`find . -name .DS_Store -delete`  
+`find . -name .DS_Store -delete`
 
 
 media relatives
@@ -93,7 +93,7 @@ System relatives
 `Keep Left Alt & Print Screen pressed, then R, S, E, I, U, B (Raising a Skinny Elephant Is Utterly Boring)`  
 
 ### Find broken symlinks in a specified directory
-`for i in \`find MY_DIRECTORY -type l\`; do [ -e $i ] || echo $i is broken; done`  
+`for i in ``find MY_DIRECTORY -type l``; do [ -e $i ] || echo $i is broken; done`  
 
 ### Get BIOS version
 `sudo dmidecode -s bios-version`  
