@@ -7,6 +7,8 @@ Config
 ### Set default editor to VIM
 git config --global core.editor vim
 
+### Set colors 
+git config color.ui true
 
 Commits
 --------------
