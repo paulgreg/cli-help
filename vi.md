@@ -8,8 +8,7 @@ VIM commands
 `~` Toggle case
 
 ### Auto complete 
-CTRL+p
-CTRL+n
+`CTRL+p` and `CTRL+n`
 
 ### Global replace
 :%s/old/new/g
