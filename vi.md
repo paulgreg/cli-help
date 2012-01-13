@@ -11,7 +11,7 @@ VIM commands
 `CTRL+p` and `CTRL+n`
 
 ### Global replace
-:%s/old/new/g
+`:%s/old/new/g`
 
 ### To open a file from vim
 `:open filename`
