@@ -38,11 +38,15 @@ CTRL+n
 `=` Auto indent
 
 ### Numbers
-CTRL+a : increment
-CTRL+x : decrement
+`CTRL+a` : increment
+
+`CTRL+x` : decrement
 
 ### Split windows
 `CTRL+ws` : Split windows
+
 `CTRL+ww` : switch between windows
+
 `CTRL+wq` : Quit a window
+
 `CTRL+wv` : Split windows vertically
