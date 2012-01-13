@@ -21,7 +21,7 @@ find relatives
 `find . -ipath './MY_DIRECTORY/FOOBAR/*/*.MY_EXTENSION' | xargs grep 'MY_STRING'`  
 
 ### open files in editor which string match in files
-`gedit \`find . -ipath './MY_DIRECTORY/FOOBAR/*/*.MY_EXTENSION\` | xargs grep 'MY_STRING' | awk -F: '{print $1}'``  
+`gedit ``find . -ipath './MY_DIRECTORY/FOOBAR/*/*.MY_EXTENSION`` | xargs grep 'MY_STRING' | awk -F: '{print $1}'`
 
 ### open files in editor which string match in files
 `find . -ipath './MY_DIRECTORY/FOOBAR/*/*.MY_EXTENSION' -exec perl -pi -e 's/MY_ORIG_STRING/MY_REPLACED_STRING/' {} \;`  
@@ -46,7 +46,7 @@ media relatives
 `ffmpeg -i mandelbrot.flv -vn -acodec copy mandelbrot.mp3`  
 
 ### do a screenshot later
-gnome-panel-screenshot --delay 5
+`gnome-panel-screenshot --delay 5`
 
 
 Bash relatives
@@ -74,14 +74,17 @@ Sharing tips
 ------------
 
 ### Share a file via HTTP
-nc -v -l 8080 < file_to_share
+`nc -v -l 8080 < file_to_share`
+
+### Share current folder by HTTP
+`python -m SimpleHTTPServer`
 
 
 System relatives
 -----------------
 
 ### Hash a password from command line
-echo "password_to_hash\cD" | sha1sum
+`echo "password_to_hash\cD" | sha1sum`
 
 ### Display a desktop notification
 `notify-send "Title" "This is a message"`  
