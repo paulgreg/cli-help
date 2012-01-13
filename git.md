@@ -14,13 +14,13 @@ Commits
 --------------
 
 ### Update a commit
-`git commit --amend`  
+`git commit --amend`
 
 ### Reset last commit
-`git reset --soft HEAD^`  
+`git reset --soft HEAD^`
 
 ### Push a single commit
-git push origin SHA1:master
+`git push origin SHA1:master`
 
 Branches
 --------------
@@ -79,7 +79,7 @@ Revert your changes
 `git checkout -- FILE`  
 
 ### Revert a file to a specified state
-git checkout SHA1 path/to/file.java
+`git checkout SHA1 path/to/file.java`
 
 ### Remove a file from staging area
 `git reset FILE`  
@@ -91,7 +91,7 @@ git checkout SHA1 path/to/file.java
 `git reset --hard origin/master`  
 
 ### Cancel last commit
-git reset HEAD^1
+`git reset HEAD^1`
 
 ### Cancel a previous commit
 `git rebase -i HEAD~2`  
@@ -112,16 +112,16 @@ Working
 `git clean -f`  
 
 ### Making a patch
-git diff > your-patch
+`git diff > your-patch`
 
 ### Applying patch
-git apply your-patch
+`git apply your-patch`
 
 ### See graphical view of log (where X is max number of commit)
-git log --graph --oneline --decorate -n X
+`git log --graph --oneline --decorate -n X`
 
 ### Remove a file from repository
-git filter-branch --tree-filter 'rm -f file-to-remove' HEAD
+`git filter-branch --tree-filter 'rm -f file-to-remove' HEAD`
 
 Bissect
 --------------
@@ -157,4 +157,4 @@ Alias
 ------
 
 ### Open current project on github from command line
-alias gitweb="git config --get remote.origin.url | sed -e 's/^.*github\.com./https:\/\/github.com\//' | sed -e 's/\.git$//' | xargs python -m webbrowser -t > /dev/null"
+`alias gitweb="git config --get remote.origin.url | sed -e 's/^.*github\.com./https:\/\/github.com\//' | sed -e 's/\.git$//' | xargs python -m webbrowser -t > /dev/null"`
