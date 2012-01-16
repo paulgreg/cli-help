@@ -69,6 +69,10 @@ and
 ### Clear screen
 `CTRL + l`  
 
+MySQL
+-------------
+### Default path to MySQL databases
+`/var/lib/mysql`
 
 Sharing tips
 ------------
@@ -79,6 +83,8 @@ Sharing tips
 ### Share current folder by HTTP
 `python -m SimpleHTTPServer`
 
+### Serve current dir files by a simple web server
+python -m SimpleHTTPServer
 
 System relatives
 -----------------
