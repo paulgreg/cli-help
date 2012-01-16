@@ -19,6 +19,9 @@ Commits
 ### Reset last commit
 `git reset --soft HEAD^`
 
+### Reset to origin 
+`git reset --hard origin/master`  
+
 ### Push a single commit
 `git push origin SHA1:master`
 
@@ -66,10 +69,13 @@ Differences
 `git diff SHA1`  
 
 ### View changes between 2 commits
-`git diff SHA1 OTHER_SHA1`  
+`git diff SHA1 OTHER_SHA1` 
 
 ### View files that have changed between 2 branches
 `git diff --name-status master..branch`  
+
+### View changes between your branch and remote branch 
+`git diff master origin/master` 
 
 
 Revert your changes
@@ -84,7 +90,7 @@ Revert your changes
 ### Remove a file from staging area
 `git reset FILE`  
 
-### Reset your updates
+### Reset your updates to your local head
 `git reset --hard HEAD`  
 
 ### Reset to master on origin
