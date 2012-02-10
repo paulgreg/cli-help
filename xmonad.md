@@ -7,7 +7,7 @@ xmonad commands
 H is host key (alt by default but often map to windows key)
 
 ### Open a term
-H-enter
+H-shift-enter
 
 ### Change window
 H-j
@@ -50,3 +50,5 @@ H-q
 
 ### Reset to default layout
 H-shift-space
+
+
