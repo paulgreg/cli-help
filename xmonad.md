@@ -50,5 +50,3 @@ H-q
 
 ### Reset to default layout
 H-shift-space
-
-### 
