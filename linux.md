@@ -89,6 +89,12 @@ python -m SimpleHTTPServer
 System relatives
 -----------------
 
+### List installed packages
+dpkg --get-selections
+
+### List package files
+dpkg -L package-name
+
 ### Hash a password from command line
 `echo "password_to_hash\cD" | sha1sum`
 
