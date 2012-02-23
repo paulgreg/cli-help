@@ -69,6 +69,15 @@ and
 ### Clear screen
 `CTRL + l`  
 
+### Begin of line
+`CTRL + a`  
+
+### End of line
+`CTRL + e`  
+
+### Paste
+`CTRL + y`  
+
 MySQL
 -------------
 ### Default path to MySQL databases
