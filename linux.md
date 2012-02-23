@@ -81,7 +81,10 @@ and
 `CTRL + e`  
 
 ### Paste
-`CTRL + y`  
+`CTRL + y`
+
+### Edit command in VIM (you should have set EDITOR variable)
+`CTRL + x` + `CTRL + e`
 
 MySQL
 -------------
