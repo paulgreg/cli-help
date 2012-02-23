@@ -32,6 +32,11 @@ find relatives
 ### delete files recursively
 `find . -name .DS_Store -delete`
 
+sed relatives
+--------------
+
+### search and replace in files
+`sed -i 's/SEARCH/REPLACE/g' **/*.txt`
 
 media relatives
 ---------------
