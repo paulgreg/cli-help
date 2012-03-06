@@ -46,7 +46,7 @@ find relatives
 ### find string in file
 `find . -name MY_FILE_PATTERN | xargs grep 'MY_STRING'`  
 
-### delete files recursively
+### delete files recursively (Warning : use with caution and make a backup first !)
 `find . -name .DS_Store -delete`
 
 sed relatives
