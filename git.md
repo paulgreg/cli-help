@@ -115,7 +115,10 @@ Working
 --------------
 
 ### remove untracked files
-`git clean -f`  
+`git clean -f`
+
+### call git rm on deleted files
+`gst -s | grep ' D ' | cut -f3 -d' ' | xargs git rm`
 
 ### Making a patch
 `git diff > your-patch`
