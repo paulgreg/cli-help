@@ -49,6 +49,9 @@ find relatives
 ### delete files recursively (Warning : use with caution and make a backup first !)
 `find . -name .DS_Store -delete`
 
+### find files and copy them 
+find . -iname "*foobar*" -exec cp "{}" ~/tmp \;
+
 sed relatives
 --------------
 
