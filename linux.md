@@ -97,6 +97,12 @@ Sharing tips
 ### Serve current dir files by a simple web server
 python -m SimpleHTTPServer
 
+File renaming tips
+------------
+
+### Rename all photo using date
+for i in *jpg; do jhead -n%Y-%m-%d-%f $i; done
+
 System relatives
 -----------------
 
