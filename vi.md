@@ -7,6 +7,9 @@ VIM commands
 ### General commands
 `~` Toggle case
 
+### Browse for a file
+`CTRL+e`
+
 ### Auto complete 
 `CTRL+p` and `CTRL+n`
 
@@ -28,8 +31,11 @@ VIM commands
 ### Previous buffer
 `:bp`
 
-### Go to buffer X
+### Go to buffer by number
 `:bX`
+
+### Go to buffer by name
+`:b yourFileName`
 
 ### Visual commands
 `>` Shift right
