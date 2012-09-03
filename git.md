@@ -58,6 +58,11 @@ OR
 ### On message 'your branch is 2 commits...'
 `git fetch --depth=HEAD`  
 
+### Remove local branch
+`git branch -d branch-name`  
+
+### Remove remote branch
+`git push origin :branch-name`  
 
 Differences
 --------------
