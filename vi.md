@@ -62,5 +62,5 @@ VIM commands
 `CTRL+wv` : Split windows vertically
 
 ### Search
-`*` : Search current word accros file (then n/b to go forward/backward)
+`*` : Search current word accross file (then n/b to go forward/backward)
 
