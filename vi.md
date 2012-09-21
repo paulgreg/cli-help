@@ -37,6 +37,9 @@ VIM commands
 ### Go to buffer by name
 `:b yourFileName`
 
+### Cycle between last and current buffer
+`:b#`
+
 ### Visual commands
 `>` Shift right
 
@@ -57,3 +60,7 @@ VIM commands
 `CTRL+wq` : Quit a window
 
 `CTRL+wv` : Split windows vertically
+
+### Search
+`*` : Search current word accros file (then n/b to go forward/backward)
+
