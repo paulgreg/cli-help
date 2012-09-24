@@ -106,6 +106,12 @@ for i in *jpg; do jhead -n%Y-%m-%d-%f $i; done
 System relatives
 -----------------
 
+### Make computer sleep (RAM)
+sudo pm-suspend
+
+### Make computer hibernate (hdd)
+sudo pm-hibernate
+
 ### List installed packages
 dpkg --get-selections
 
