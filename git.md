@@ -64,11 +64,18 @@ OR
 ### Remove remote branch
 `git push origin :branch-name`  
 
+Search
+--------------
+
+### Search what commit has changed that String
+`git log -GsearchedString`
+
+
 Differences
 --------------
 
 ### View changes in a file
-`git log -p FILE`  
+`git log -p FILE`
 
 ### View changes between head and a commit
 `git diff SHA1`  
