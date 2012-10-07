@@ -79,6 +79,8 @@ media relatives
 ### do a screenshot later
 `gnome-panel-screenshot --delay 5`
 
+### Merge 2 video files
+`mencoder -ovc copy -oac copy video1.avi video2.avi -o completevideos.avi`
 
 MySQL
 -------------
