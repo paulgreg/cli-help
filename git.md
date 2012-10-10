@@ -147,13 +147,13 @@ Working
 Bissect
 --------------
 
-### begin a bissection
-`git bissect start`  
-`git bissect bad COMMIT`  
-`git bissect good COMMIT`  
+### begin a bisection
+`git bisect start`  
+`git bisect bad COMMIT`  
+`git bisect good COMMIT`  
 
 ### then, if you can, automate it
-`git bissect run COMMAND`  
+`git bisect run COMMAND`  
 
 ### after, you may log results
 `git bisect log > bisect_log.txt`  
