@@ -152,7 +152,12 @@ Bissect
 `git bisect bad COMMIT`  
 `git bisect good COMMIT`  
 
-### then, if you can, automate it
+### test, then
+`git bisect good`
+or 
+`git bisect bad`
+
+### or, if you can automate it
 `git bisect run COMMAND`  
 
 ### after, you may log results
