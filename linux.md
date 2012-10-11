@@ -18,6 +18,9 @@ Bash relatives
 and
 `CTRL + p`
 
+### Last argument
+`alt .`
+
 ### Clear screen
 `CTRL + l`
 
