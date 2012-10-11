@@ -64,3 +64,11 @@ VIM commands
 ### Search
 `*` : Search current word accross file (then n/b to go forward/backward)
 
+### Edition inside tags
+vat,dat,yat,cat  (visualise,delete,yank,change) a tag
+vit,dit,yit,cit will empty a tag pair 
+va',da',ya',ca'  (visualise,delete,yank,change) text inside quote
+
+### Go to last/next change
+`CTRL+i`
+`CTRL+o`
