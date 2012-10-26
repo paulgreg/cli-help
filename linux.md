@@ -15,7 +15,8 @@ Bash relatives
 
 ### Recursive search
 `CTRL + r`
-and
+
+### Previous search
 `CTRL + p`
 
 ### Last argument
