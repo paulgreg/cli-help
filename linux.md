@@ -70,6 +70,9 @@ file relatives
 media relatives
 ---------------
 
+### resize images using convert from imagemagick package
+`for i in $( ls *.jpg); do convert -resize 50% $i re_$i; done` 
+
 ### erase a CDRW
 `sudo cdrecord blank=all -immed dev=/dev/cdrw`  
 
