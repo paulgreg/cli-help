@@ -1,7 +1,6 @@
 GIT commands
 ==============
 
-
 Config
 ----------
 ### Set default editor to VIM
@@ -9,6 +8,7 @@ Config
 
 ### Set colors 
 `git config color.ui true`
+
 
 Commits
 --------------
@@ -24,6 +24,7 @@ Commits
 
 ### Push a single commit
 `git push origin SHA1:master`
+
 
 Branches
 --------------
@@ -64,8 +65,24 @@ OR
 ### Remove remote branch
 `git push origin :branch-name`  
 
+### Copy content from a branch to another
+`git checkout BRANCH -- path/to/file.ext`
+
+### Show merged branch
+`git branch --merged`
+
+### Show non merged branch
+`git branch --not-merged`
+
+### Show what branch contains that commit
+`git branch --contains SHA1`
+
+
 Search
 --------------
+
+### Search last matched commit search
+`git show :/query`
 
 ### Search what commit has changed that String
 `git log -GsearchedString`
@@ -89,6 +106,17 @@ Differences
 ### View changes between your branch and remote branch 
 `git diff master origin/master` 
 
+### Blame ignoring whitespace
+`git blame -w`
+
+### Blame detecting code moves 
+`git blame -M`
+
+### Blame detecting code moves between files
+`git blame -C`
+
+### Blame detecting code moves between files and in all commits
+`git blame -CCC`
 
 Revert your changes
 -------------------
@@ -126,6 +154,9 @@ Revert your changes
 Working
 --------------
 
+### Better git status
+`git status -sb`
+
 ### remove untracked files
 `git clean -f`
 
@@ -143,6 +174,9 @@ Working
 
 ### Remove a file from repository
 `git filter-branch --tree-filter 'rm -f file-to-remove' HEAD`
+
+### Find lost commits
+`git fsck --lost-found`
 
 Bissect
 --------------
@@ -178,6 +212,7 @@ Update all local projects
 `   $command`  
 `   cd ..`  
 `done`  
+
 
 Alias
 ------
