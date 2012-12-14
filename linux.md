@@ -68,6 +68,13 @@ file relatives
 ### less on a source file with syntax highlighting
 `highlight -l -A SOURCE_FILE  | less -R`  
 
+
+Web relatives
+--------------
+
+### Check status of all link from a web page or rss feed
+`wget -O - http://blog.valtech.fr/podcasts/podcasts.xml | grep -o -E 'http://([^"#<]+)' | cut -d'"' -f2 | sort | uniq | parallel "curl -o /dev/null --silent --head --write-out '%{http_code} %{url_effective}\n' {1}"`
+
 media relatives
 ---------------
 
