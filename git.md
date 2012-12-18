@@ -205,8 +205,11 @@ Update all local projects
 --------------
 
 ``!/bin/bash
+
 for i in \`ls -d */\`; do
+
  (echo Udating ${i} && cd ${i} && git pull --rebase)
+ 
 done``
 
 
