@@ -1,6 +1,7 @@
 Linux commands
 ==============
 
+
 Bash relatives
 --------------
 
@@ -56,11 +57,13 @@ find relatives
 ### find files and copy them 
 `find . -iname "*foobar*" -exec cp "{}" ~/tmp \;`
 
+
 sed relatives
 --------------
 
 ### search and replace in files
 `sed -i 's/SEARCH/REPLACE/g' **/*.txt`
+
 
 file relatives
 --------------
@@ -74,6 +77,7 @@ Web relatives
 
 ### Check status of all link from a web page or rss feed
 `wget -O - http://blog.valtech.fr/podcasts/podcasts.xml | grep -o -E 'http://([^"#<]+)' | cut -d'"' -f2 | sort | uniq | parallel "curl -o /dev/null --silent --head --write-out '%{http_code} %{url_effective}\n' {1}"`
+
 
 media relatives
 ---------------
@@ -96,10 +100,12 @@ media relatives
 ### Merge 2 video files
 `mencoder -ovc copy -oac copy video1.avi video2.avi -o completevideos.avi`
 
+
 MySQL
 -------------
 ### Default path to MySQL databases
 `/var/lib/mysql`
+
 
 Sharing tips
 ------------
@@ -110,14 +116,13 @@ Sharing tips
 ### Share current folder by HTTP
 `python -m SimpleHTTPServer`
 
-### Serve current dir files by a simple web server
-`python -m SimpleHTTPServer`
 
 File renaming tips
 ------------
 
 ### Rename all photo using date
 `for i in *jpg; do jhead -n%Y-%m-%d-%f $i; done`
+
 
 System relatives
 -----------------
