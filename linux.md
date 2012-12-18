@@ -54,7 +54,7 @@ find relatives
 `find . -name .DS_Store -delete`
 
 ### find files and copy them 
-find . -iname "*foobar*" -exec cp "{}" ~/tmp \;
+`find . -iname "*foobar*" -exec cp "{}" ~/tmp \;`
 
 sed relatives
 --------------
@@ -111,28 +111,28 @@ Sharing tips
 `python -m SimpleHTTPServer`
 
 ### Serve current dir files by a simple web server
-python -m SimpleHTTPServer
+`python -m SimpleHTTPServer`
 
 File renaming tips
 ------------
 
 ### Rename all photo using date
-for i in *jpg; do jhead -n%Y-%m-%d-%f $i; done
+`for i in *jpg; do jhead -n%Y-%m-%d-%f $i; done`
 
 System relatives
 -----------------
 
 ### Make computer sleep (RAM)
-sudo pm-suspend
+`sudo pm-suspend`
 
 ### Make computer hibernate (hdd)
-sudo pm-hibernate
+`sudo pm-hibernate`
 
 ### List installed packages
-dpkg --get-selections
+`dpkg --get-selections`
 
 ### List package files
-dpkg -L package-name
+`dpkg -L package-name`
 
 ### Hash a password from command line
 `echo "password_to_hash\cD" | sha1sum`
