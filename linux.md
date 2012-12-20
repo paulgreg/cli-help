@@ -88,6 +88,13 @@ Web relatives
 `curl 'http://search.twitter.com/search.json?q=bieber&rpp=5&include_entities=true' | jq '.results[0] | {from_user, text}'`
 
 
+Network relatives
+---------------
+
+### Using ngrep to capture web traffic
+` ngrep -d en1 -q -W byline "^(GET|POST) .*"`
+
+
 media relatives
 ---------------
 
