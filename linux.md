@@ -81,6 +81,13 @@ Web relatives
 ### Show HTTP headers
 `curl -v -A "user agent string" -sI "http://www.google.com"`
 
+### Send an HTTP POST
+`curl https://api.faker.com/v1/customers -i -XPOST -H 'Content-Type: application/json' -d '{"firstName":"Justin", "lastName":"Bieber"}'`
+
+### Using jq to filter JSON (http://stedolan.github.com/jq/)
+`curl 'http://search.twitter.com/search.json?q=bieber&rpp=5&include_entities=true' | jq '.results[0] | {from_user, text}'`
+
+
 media relatives
 ---------------
 
