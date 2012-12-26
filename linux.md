@@ -91,6 +91,9 @@ Web relatives
 Network relatives
 ---------------
 
+### SSH tunneling (distant port 6081 to local port 80)
+`ssh -L80:localhost:6081 user@server`
+
 ### Using ngrep to capture web traffic
 ` ngrep -d en1 -q -W byline "^(GET|POST) .*"`
 
