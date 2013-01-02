@@ -178,3 +178,6 @@ System relatives
 
 ### kill a process by its window
 `xkill #And squeeze the trigger`
+
+### Cleanup /boot on Ubuntu
+`dpkg --get-selections|grep 'linux-image*'|awk '{print $1}'|egrep -v "linux-image-$(uname -r)|linux-image-generic" |while read n;do apt-get -y remove $n;done`
