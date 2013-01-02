@@ -44,6 +44,9 @@ Bash relatives
 ### Call back last VIM command 
 `!vim`
 
+### Use tr to display your $PATH
+`echo $PATH | tr ":" "\n" | sort`
+
 
 find relatives
 --------------
