@@ -72,7 +72,13 @@ file relatives
 --------------
 
 ### less on a source file with syntax highlighting
-`highlight -l -A SOURCE_FILE  | less -R`  
+`highlight -l -A SOURCE_FILE  | less -R`
+
+### Works on a bunch of file, like translate mp4s to mp3s
+``for i in *.mp4; do ffmpeg -i "$i" "`basename $i .mp4`.mp3"; done``
+
+### Calculate the size of all png files
+`find . -iname "*.png" -print0 | xargs -0 du -ch | tail -1`
 
 
 Web relatives
