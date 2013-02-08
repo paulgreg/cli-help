@@ -29,6 +29,12 @@ Commits
 Branches
 --------------
 
+### Checkout Your Last Branch
+`git checkout -`
+
+### Zero Out a Branch's History
+`git checkout --orphan <NEWBRANCH>`
+
 ### To cherry-pick
 `git checkout branch_name`  
 `git log`  
@@ -87,6 +93,8 @@ Search
 ### Search what commit has changed that String
 `git log -GsearchedString`
 
+### Find a String in the Entire Git History 
+`git rev-list --all | xargs git grep -F '<YOUR STRING>'`
 
 Differences
 --------------
