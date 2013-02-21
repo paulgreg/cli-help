@@ -111,6 +111,9 @@ Differences
 ### View files that have changed between 2 branches
 `git diff --name-status master..branch`  
 
+### View differences in a file from 2 branch
+`git diff otherBranch path/to/file`  
+
 ### View changes between your branch and remote branch 
 `git diff master origin/master` 
 
