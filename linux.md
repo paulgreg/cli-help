@@ -60,6 +60,9 @@ find relatives
 ### find files and copy them 
 `find . -iname "*foobar*" -exec cp "{}" ~/tmp \;`
 
+### find images more than 100 Kb
+`find . -type f -size +100k | grep '.png\|.jpg'`
+
 
 sed relatives
 --------------
