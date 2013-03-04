@@ -61,7 +61,7 @@ find relatives
 `find . -iname "*foobar*" -exec cp "{}" ~/tmp \;`
 
 ### find images more than 100 Kb
-`find . -type f -size +100k | grep '.png\|.jpg'`
+`find . -type f -size +100k -name '*.jpg'`
 
 
 sed relatives
@@ -78,7 +78,7 @@ file relatives
 `highlight -l -A SOURCE_FILE  | less -R`
 
 ### Works on a bunch of file, like translate mp4s to mp3s
-``for i in *.mp4; do ffmpeg -i "$i" "`basename $i .mp4`.mp3"; done``
+``for i in *.mp4; do ffmpeg -i "$i"" `basename $i .mp4`.mp3"; done``
 
 ### Calculate the size of all png files
 `find . -iname "*.png" -print0 | xargs -0 du -ch | tail -1`
@@ -116,8 +116,8 @@ Network relatives
 media relatives
 ---------------
 
-### resize images using convert from imagemagick package
-`for i in $( ls *.jpg); do convert -resize 50% $i re_$i; done` 
+### resize images (by maximal width or height) using convert from imagemagick package
+`for i in $( ls *.jpg); do convert -resize 2048x2048 $i re_$i; done` 
 
 ### erase a CDRW
 `sudo cdrecord blank=all -immed dev=/dev/cdrw`  
