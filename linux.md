@@ -47,6 +47,12 @@ Bash relatives
 ### Use tr to display your $PATH
 `echo $PATH | tr ":" "\n" | sort`
 
+### Fetch the x to y arguments from last commands
+`ls file1 file2 file3; cat !!:1-2`
+
+### Search in a dictionnary
+`dict someName`
+
 
 find relatives
 --------------
@@ -83,6 +89,9 @@ file relatives
 ### Calculate the size of all png files
 `find . -iname "*.png" -print0 | xargs -0 du -ch | tail -1`
 
+### Move file to trash
+`gvfs-trash filename`
+
 
 Web relatives
 --------------
@@ -112,6 +121,11 @@ Network relatives
 ### Throttle a program
 `trickle -d 10 -u 10 google-chrome`
 
+### Show current connections opened
+`lsof -i`
+
+### Show current connections opened in real time
+`iftop`
 
 media relatives
 ---------------
