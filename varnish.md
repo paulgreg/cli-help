@@ -14,4 +14,4 @@ Varnish commands
 `varnishtop -b -i TxURL`
 
 ### Show what caused recent 503 errors
-`varnishlog -d -c -o TxStatus 503`
+`varnishlog -c -m TxStatus:503`
