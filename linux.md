@@ -127,6 +127,10 @@ Network relatives
 ### Show current connections opened in real time
 `iftop`
 
+### Info about opened socket
+`ss -s`
+
+
 media relatives
 ---------------
 
@@ -175,6 +179,9 @@ File renaming tips
 System relatives
 -----------------
 
+### What is currently running
+`pstree -a`
+
 ### Make computer sleep (RAM)
 `sudo pm-suspend`
 
@@ -207,3 +214,6 @@ System relatives
 
 ### Cleanup /boot on Ubuntu
 `dpkg --get-selections|grep 'linux-image*'|awk '{print $1}'|egrep -v "linux-image-$(uname -r)|linux-image-generic" |while read n;do apt-get -y remove $n;done`
+
+### List devices
+`lspci` and `sudo dmidecode`
