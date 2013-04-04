@@ -54,7 +54,7 @@ Bash relatives
 `dict someName`
 
 
-find relatives
+Find relatives
 --------------
 
 ### find string in file
@@ -70,14 +70,14 @@ find relatives
 `find . -type f -size +100k -name '*.jpg'`
 
 
-sed relatives
+Sed relatives
 --------------
 
 ### search and replace in files
 `sed -i 's/SEARCH/REPLACE/g' **/*.txt`
 
 
-file relatives
+File relatives
 --------------
 
 ### less on a source file with syntax highlighting
@@ -130,8 +130,11 @@ Network relatives
 ### Info about opened socket
 `ss -s`
 
+### Port scanning using netcat
+` nc -z -v -n 127.0.0.1 21-25`
 
-media relatives
+
+Media relatives
 ---------------
 
 ### resize images (by maximal width or height) using convert from imagemagick package
