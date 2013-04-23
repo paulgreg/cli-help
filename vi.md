@@ -53,13 +53,21 @@ VIM commands
 `CTRL+x` : decrement
 
 ### Split windows
-`CTRL+ws` : Split windows
+`CTRL+w s` : Split windows horizontaly
 
-`CTRL+ww` : switch between windows
+`CTRL+w v` : Split windows vertically
+
+`CTRL+w w` : switch between windows
+
+`CTRL+w l` : go to splits at right
+
+`CTRL+w h` : go to splits at left
+
+`CTRL+w k` : go to splits at top
+
+`CTRL+w j` : go to splits at bottom
 
 `CTRL+wq` : Quit a window
-
-`CTRL+wv` : Split windows vertically
 
 ### Search
 `*` : Search current word accross file (then n/b to go forward/backward)
@@ -69,9 +77,11 @@ vat,dat,yat,cat : (visualise,delete,yank,change) a tag
 vit,dit,yit,cit : will empty a tag pair 
 va',da',ya',ca' : (visualise,delete,yank,change) text inside quote
 
-### Go to last/next change
-`CTRL+i`
-`CTRL+o`
+### Go to last/next location
+
+`CTRL+i` Go to next location
+
+`CTRL+o` go to last location
 
 ### Vim Diff
 `do` : Get changes from other window into the current window.
