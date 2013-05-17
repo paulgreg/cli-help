@@ -80,6 +80,9 @@ Sed relatives
 File relatives
 --------------
 
+### List directories size (with sort)
+`du -skh * | sort -n`
+
 ### less on a source file with syntax highlighting
 `highlight -l -A SOURCE_FILE  | less -R`
 
