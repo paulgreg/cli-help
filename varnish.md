@@ -1,8 +1,14 @@
 Varnish commands
 ==============
 
-### Show hit/miss histogram
+### Varnish histogram to show hit/miss
 `varnishhist`
+
+### Varnish log
+`varnishlog`
+
+### Varnish top
+`varnishtop`
 
 ### Status code stats
 `varnishtop -i TxStatus`
@@ -10,11 +16,11 @@ Varnish commands
 ### Show referrer’s request
 `varnishtop -i RxHeader -I \^Referer`
 
-### Filter only some URL
-`varnishlog -c -m Hash:/some/url`
-
 ### Show requests not cached
 `varnishtop -b -i TxURL`
+
+### Filter only some URL
+`varnishlog -c -m Hash:/some/url`
 
 ### Show what caused recent 503 errors
 `varnishlog -c -m TxStatus:503`
