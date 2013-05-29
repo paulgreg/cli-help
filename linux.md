@@ -102,6 +102,9 @@ Archive relatives
 ### List files in a tar.gz
 `tar -ztvf file.tar.gz`
 
+### Extract archive to a chosen directory
+`tar xvzf file.tar.gz -C directory`
+
 
 Web relatives
 --------------
