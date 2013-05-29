@@ -96,6 +96,13 @@ File relatives
 `gvfs-trash filename`
 
 
+Archive relatives
+--------------
+
+### List files in a tar.gz
+`tar -ztvf file.tar.gz`
+
+
 Web relatives
 --------------
 
