@@ -2,7 +2,7 @@ Linux commands
 ==============
 
 
-Bash relatives
+zsh relatives
 --------------
 
 ### Delete last word from command line
@@ -31,6 +31,12 @@ Bash relatives
 
 ### End of line
 `CTRL + e`
+
+### Move word by word
+`ALT + SHIFT + f`
+
+### Move word by word backward
+`ALT + SHIFT + b`
 
 ### Paste
 `CTRL + y`
