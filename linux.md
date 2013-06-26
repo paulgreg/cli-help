@@ -127,6 +127,9 @@ Web relatives
 ### Using jq to filter JSON (http://stedolan.github.com/jq/)
 `curl 'http://search.twitter.com/search.json?q=bieber&rpp=5&include_entities=true' | jq '.results[0] | {from_user, text}'`
 
+### Using curl to bypass Varnish
+`curl --verbose --header 'Host: www.example.com' 'http://10.1.1.36:8000/path'`
+
 
 Network relatives
 ---------------
