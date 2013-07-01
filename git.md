@@ -161,6 +161,9 @@ Revert your changes
 ### if tag is already pushed, you should push the removal
 `git push origin :refs/tags/TAGNAME`  
 
+### Change author/committer email
+`git filter-branch -f --env-filter 'if [ $GIT_AUTHOR_EMAIL = old@email ]; then GIT_AUTHOR_EMAIL=new@email; fi; export GIT_AUTHOR_EMAIL'`
+`git filter-branch -f --env-filter 'if [ $GIT_COMMITTER_EMAIL = old@email ]; then GIT_COMMITTER_EMAIL=new@email; fi; export GIT_COMMITTER_EMAIL'`
 
 Working
 --------------
