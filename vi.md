@@ -47,6 +47,14 @@ VIM commands
 
 `=` Auto indent
 
+### Switch into hex mode
+
+`:%!xxd`
+
+### Exit hex mode
+
+`:%!xxd -r`
+
 ### Numbers
 `CTRL+a` : increment
 
