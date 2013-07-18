@@ -1,6 +1,9 @@
 Varnish commands
 ==============
 
+### Check config syntax
+`varnishd -C -f /etc/varnish/config.vcl`
+
 ### Varnish histogram to show hit/miss
 `varnishhist`
 
