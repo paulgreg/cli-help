@@ -155,6 +155,9 @@ Network relatives
 ### Port scanning using netcat
 ` nc -z -v -n 127.0.0.1 21-25`
 
+### Reverse DNS query using dig
+`dig +noall +answer -x 10.0.1.167`
+
 
 Media relatives
 ---------------
