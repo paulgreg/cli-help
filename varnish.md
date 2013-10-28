@@ -28,3 +28,5 @@ Varnish commands
 ### Show what caused recent 503 errors
 `varnishlog -c -m TxStatus:503`
 
+### Show backend (probe) status
+`varnishlog -i Backend_health`
