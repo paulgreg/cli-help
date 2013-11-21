@@ -158,6 +158,9 @@ Network relatives
 ### Reverse DNS query using dig
 `dig +noall +answer -x 10.0.1.167`
 
+### Capture traffic with tcpdump to import in Wireshark
+`tcpdump -i eth0 -s 65535 -w tcpdump.dump`
+
 
 Media relatives
 ---------------
