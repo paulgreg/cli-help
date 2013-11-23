@@ -250,3 +250,8 @@ System relatives
 
 ### List devices
 `lspci` and `sudo dmidecode`
+
+### Mount LVM partition
+`sudo apt-get install lvm2 && sudo modprobe dm-mod`
+`sudo vgchange -a y`
+
