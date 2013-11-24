@@ -111,6 +111,9 @@ Archive relatives
 ### Extract archive to a chosen directory
 `tar xvzf file.tar.gz -C directory`
 
+### Create a tar.gz archive
+tar –czvf archive.tar.gz path/
+
 
 Web relatives
 --------------
