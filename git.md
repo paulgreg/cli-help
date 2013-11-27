@@ -114,6 +114,9 @@ Differences
 ### View differences in a file from 2 branch
 `git diff otherBranch path/to/file`  
 
+### View differences from 2 branches on current path
+`git diff first-branch second-branch -- .`
+
 ### View changes between your branch and remote branch 
 `git diff master origin/master` 
 
