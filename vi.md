@@ -5,7 +5,7 @@ VIM commands
 `sudo apt-get install vim`  
 
 ### General commands
-`~` Toggle case
+`~` : Toggle case
 
 ### Browse for a file
 `CTRL+e`
@@ -41,11 +41,11 @@ VIM commands
 `:b#`
 
 ### Visual commands
-`>` Shift right
+`>` : Shift right
 
-`<` Shift left
+`<` : Shift left
 
-`=` Auto indent
+`=` : Auto indent
 
 ### Switch into hex mode
 
@@ -81,9 +81,11 @@ VIM commands
 `*` : Search current word accross file (then n/b to go forward/backward)
 
 ### Edition inside tags
-vat,dat,yat,cat : (visualise,delete,yank,change) a tag
-vit,dit,yit,cit : will empty a tag pair 
-va',da',ya',ca' : (visualise,delete,yank,change) text inside quote
+`vat`,`dat`,`yat`,`cat` : (visualise,delete,yank,change) a tag
+
+`vit`,`dit`,`yit`,`cit` : will empty a tag pair 
+
+`va`',`da`',`ya`,`ca` : (visualise,delete,yank,change) text inside quote
 
 ### Go to last/next location
 
@@ -93,7 +95,21 @@ va',da',ya',ca' : (visualise,delete,yank,change) text inside quote
 
 ### Vim Diff
 `do` : Get changes from other window into the current window.
+
 `dp` : Put the changes from current window into the other window.
+
 `]c` : Jump to the next change.
+
 `[c` : Jump to the previous change.
+
 `Ctrl W + Ctrl W` : Switch to the other split window.
+
+
+### Folding / expand
+`zo` : open fold under cursor
+
+`zc` : close fold under cursor
+
+`zR` : open all folds
+
+`zM` : close all folds
