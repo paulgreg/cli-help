@@ -258,3 +258,34 @@ System relatives
 `sudo apt-get install lvm2 && sudo modprobe dm-mod`
 `sudo vgchange -a y`
 
+
+dmcrypt relatives
+-----------------
+
+### Format a drive
+`sudo cryptsetup -y -v luksFormat /dev/sdX`
+
+### Open/unlock a drive
+`sudo cryptsetup luksOpen /dev/sdX mappingName`
+
+`mount /dev/mapper/mappingName /media/mountName`
+
+### Format a fresh created drive
+`sudo mkfs.ext4 /dev/mapper/mappingName`
+
+### Close/lock a drive
+`umount /media/mountName`
+
+`sudo cryptsetup luksClose mappingName`
+
+### Add key to a drive
+`sudo cryptsetup luksAddKey /dev/sdX`
+
+### Check keyslots
+`sudo cryptsetup luksDump /dev/sdX`
+
+### Remove key to a drive
+`sudo cryptsetup luksRemoveKey /dev/sdX`
+
+### Check drive info
+`sudo cryptsetup -v status mappingName`
