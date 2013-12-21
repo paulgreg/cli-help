@@ -156,7 +156,7 @@ Network relatives
 `ss -s`
 
 ### Port scanning using netcat
-` nc -z -v -n 127.0.0.1 21-25`
+`nc -z -v -n 127.0.0.1 21-25`
 
 ### Reverse DNS query using dig
 `dig +noall +answer -x 10.0.1.167`
@@ -214,6 +214,9 @@ File renaming tips
 
 System relatives
 -----------------
+
+### Fetch missing APT keys
+`sudo apt-key adv --keyserver keyserver.ubuntu.com --recv- keys MISSING_KEY_ID`
 
 ### What is currently running
 `pstree -a`
