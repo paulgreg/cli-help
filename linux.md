@@ -266,10 +266,10 @@ dmcrypt relatives
 -----------------
 
 ### Format a drive
-`sudo cryptsetup -y -v luksFormat /dev/sdX`
+`sudo cryptsetup -y -v luksFormat /dev/sdX1`
 
 ### Open/unlock a drive
-`sudo cryptsetup luksOpen /dev/sdX mappingName`
+`sudo cryptsetup luksOpen /dev/sdX1 mappingName`
 
 `mount /dev/mapper/mappingName /media/mountName`
 
@@ -282,13 +282,13 @@ dmcrypt relatives
 `sudo cryptsetup luksClose mappingName`
 
 ### Add key to a drive
-`sudo cryptsetup luksAddKey /dev/sdX`
+`sudo cryptsetup luksAddKey /dev/sdX1`
 
 ### Check keyslots
-`sudo cryptsetup luksDump /dev/sdX`
+`sudo cryptsetup luksDump /dev/sdX1`
 
 ### Remove key to a drive
-`sudo cryptsetup luksRemoveKey /dev/sdX`
+`sudo cryptsetup luksRemoveKey /dev/sdX1`
 
 ### Check drive info
 `sudo cryptsetup -v status mappingName`
