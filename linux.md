@@ -292,3 +292,21 @@ dmcrypt relatives
 
 ### Check drive info
 `sudo cryptsetup -v status mappingName`
+
+
+software RAID relatives
+-----------------
+
+### Create a new RAID array
+`mdadm --create --verbose /dev/md0 --level=5 /dev/sdX1 /dev/sdY1 /dev/sdZ1`
+
+### Remove a disk from an array
+`mdadm /dev/md0 --fail /dev/sdX1 --remove /dev/sdX1`
+
+### Add a disk to an array
+`mdadm --add /dev/md0 /dev/sdX1`
+
+### Check RAID status
+`cat /proc/mdstat`
+and
+`mdadm --detail /dev/md0`
