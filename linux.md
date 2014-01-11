@@ -171,7 +171,7 @@ Media relatives
 ### resize images (by maximal width or height) using convert from imagemagick package
 `for i in $( ls *.jpg); do convert -resize 2048x2048\> $i re_$i; done`
 or
-`find ~/Pictures -type f -iname "*.jpg" -exec convert -resize 2048x2048\> {} {} \;`
+`find /path/to/your/image -type f -iname "*.jpg" -exec convert -resize 2048x2048\> {} {} \;`
 
 ### erase a CDRW
 `sudo cdrecord blank=all -immed dev=/dev/cdrw`  
