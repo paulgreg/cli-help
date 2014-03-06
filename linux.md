@@ -141,7 +141,7 @@ Network relatives
 `ssh -L80:localhost:6081 user@server`
 
 ### Using ngrep to capture web traffic
-` ngrep -d en1 -q -W byline "^(GET|POST) .*"`
+` ngrep -d eth0 -q -W byline port 80`
 
 ### Throttle a program
 `trickle -d 10 -u 10 google-chrome`
