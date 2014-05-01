@@ -106,13 +106,13 @@ Archive relatives
 --------------
 
 ### List files in a tar.gz
-`tar -ztvf file.tar.gz`
+`tar ztvf file.tar.gz`
 
 ### Extract archive to a chosen directory
 `tar xvzf file.tar.gz -C directory`
 
 ### Create a tar.gz archive
-`tar –czvf archive.tar.gz path/`
+`tar czvf archive.tar.gz path/`
 
 
 Web relatives
