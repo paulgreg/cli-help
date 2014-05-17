@@ -101,6 +101,9 @@ File relatives
 ### Move file to trash
 `gvfs-trash filename`
 
+### Raw copy using pv to watch the progress
+`pv -tpreb image-file.img | sudo dd of=/dev/sdb`
+
 
 Archive relatives
 --------------
