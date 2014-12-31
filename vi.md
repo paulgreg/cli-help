@@ -113,3 +113,7 @@ VIM commands
 `zR` : open all folds
 
 `zM` : close all folds
+
+### Tabularize
+
+`:Tab/|` : to align on | after a visual selection
