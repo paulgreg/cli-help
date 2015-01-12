@@ -167,6 +167,9 @@ Network relatives
 ### Capture traffic with tcpdump to import in Wireshark
 `tcpdump -i eth0 -s 65535 -w tcpdump.dump`
 
+### Know who are blocking thoses ports
+`netstat -tulpn`
+
 
 Media relatives
 ---------------
