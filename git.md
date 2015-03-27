@@ -195,6 +195,14 @@ Working
 ### Find lost commits
 `git fsck --lost-found`
 
+
+Patch
+-------------
+
+### Generate a patch for the last commit (without spaces)
+`git format-patch -n HEAD^ -w`
+
+
 Bissect
 --------------
 
