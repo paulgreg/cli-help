@@ -180,12 +180,6 @@ Working
 ### call git rm on deleted files
 `gst -s | grep ' D ' | cut -f3 -d' ' | xargs git rm`
 
-### Making a patch
-`git diff > your-patch`
-
-### Applying patch
-`git apply your-patch`
-
 ### See graphical view of log (where X is max number of commit)
 `git log --graph --oneline --decorate -n X`
 
@@ -201,6 +195,12 @@ Patch
 
 ### Generate a patch for the last commit (without spaces)
 `git format-patch -n HEAD^ -w`
+
+### Making a patch from current changes
+`git diff > your-patch`
+
+### Applying patch
+`git apply your-patch`
 
 
 Bissect
