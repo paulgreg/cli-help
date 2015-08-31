@@ -75,6 +75,9 @@ Find relatives
 ### find images more than 100 Kb
 `find . -type f -size +100k -name '*.jpg'`
 
+### find what directory uses the most inodes
+`find / -xdev -printf '%h\n' | sort | uniq -c | sort -k 1 -n`
+
 
 Sed relatives
 --------------
