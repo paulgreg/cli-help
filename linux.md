@@ -174,6 +174,13 @@ Network relatives
 `netstat -tulpn`
 
 
+Security relatives
+---------------
+
+### Inspect a certicate (pem)
+`openssl x509 -in GandiStandardSSLCA2.pem -inform pem -noout -text`
+
+
 Media relatives
 ---------------
 
