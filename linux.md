@@ -44,10 +44,10 @@ zsh relatives
 ### Edit command in VIM (you should have set EDITOR variable)
 `CTRL + x` + `CTRL + e`
 
-### Call back last command 
+### Call back last command
 `!!`
 
-### Call back last VIM command 
+### Call back last VIM command
 `!vim`
 
 ### Use tr to display your $PATH
@@ -64,12 +64,12 @@ Find relatives
 --------------
 
 ### find string in file
-`find . -name MY_FILE_PATTERN | xargs grep 'MY_STRING'`  
+`find . -name MY_FILE_PATTERN | xargs grep 'MY_STRING'`
 
 ### delete files recursively (Warning : use with caution and make a backup first !)
 `find . -name .DS_Store -delete`
 
-### find files and copy them 
+### find files and copy them
 `find . -iname "*foobar*" -exec cp "{}" ~/tmp \;`
 
 ### find images more than 100 Kb
@@ -190,13 +190,13 @@ or
 `find /path/to/your/image -type f -iname "*.jpg" -exec convert -resize 2048x2048\> {} {} \;`
 
 ### erase a CDRW
-`sudo cdrecord blank=all -immed dev=/dev/cdrw`  
+`sudo cdrecord blank=all -immed dev=/dev/cdrw`
 
 ### mount an Iso file
-`mount -o loop -t iso9660 file.iso /media/iso`  
+`mount -o loop -t iso9660 file.iso /media/iso`
 
 ### extract audio from a video (without reencoding it)
-`ffmpeg -i mandelbrot.flv -vn -acodec copy mandelbrot.mp3`  
+`ffmpeg -i mandelbrot.flv -vn -acodec copy mandelbrot.mp3`
 
 ### do a screenshot later
 `gnome-panel-screenshot --delay 5`
@@ -209,6 +209,9 @@ MySQL
 -------------
 ### Default path to MySQL databases
 `/var/lib/mysql`
+
+### Change root password
+`mysqladmin -u root -p'oldpassword' password 'newpassword'`
 
 
 Sharing tips
@@ -253,16 +256,16 @@ System relatives
 `echo "password_to_hash\cD" | sha1sum`
 
 ### Display a desktop notification
-`notify-send "Title" "This is a message"`  
+`notify-send "Title" "This is a message"`
 
 ### When the system's freezed :
-`Keep Left Alt & Print Screen pressed, then R, S, E, I, U, B (Raising a Skinny Elephant Is Utterly Boring)`  
+`Keep Left Alt & Print Screen pressed, then R, S, E, I, U, B (Raising a Skinny Elephant Is Utterly Boring)`
 
 ### Find broken symlinks in a specified directory
 ``for i in `find MY_DIRECTORY -type l`; do [ -e $i ] || echo $i is broken; done``
 
 ### Get BIOS version
-`sudo dmidecode -s bios-version`  
+`sudo dmidecode -s bios-version`
 
 ### kill a process by its window
 `xkill #And squeeze the trigger`
