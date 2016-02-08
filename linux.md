@@ -177,6 +177,9 @@ Network relatives
 Security relatives
 ---------------
 
+### Extract the public key from a private key
+`openssl rsa -in privkey.pem -pubout > key.pub`
+
 ### Inspect a certicate (pem)
 `openssl x509 -in GandiStandardSSLCA2.pem -inform pem -noout -text`
 
