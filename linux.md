@@ -177,6 +177,9 @@ Network relatives
 Security relatives
 ---------------
 
+### Show certificate informations
+`openssl x509 -in ca.pem -inform pem -noout -text`
+
 ### Extract the public key from a private key
 `openssl rsa -in privkey.pem -pubout > key.pub`
 
