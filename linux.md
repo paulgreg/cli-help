@@ -146,8 +146,10 @@ Network relatives
 ### SSH tunneling (distant port 6081 to local port 80)
 `ssh -L80:localhost:6081 user@server`
 
-### Using ngrep to capture web traffic
+### Capture web traffic
 ` ngrep -d eth0 -q -W byline port 80`
+or 
+`sudo httpry -i eth0`
 
 ### Throttle a program
 `trickle -d 10 -u 10 google-chrome`
