@@ -26,6 +26,12 @@ Commits
 `git push origin SHA1:master`
 
 
+Add
+--------------
+
+### Add a file that is git ignored !
+`git add -f test.log`
+
 Branches
 --------------
 
@@ -83,6 +89,21 @@ OR
 ### Show what branch contains that commit
 `git branch --contains SHA1`
 
+Git show
+--------------
+
+### Show what’s in a commit
+`git show :SHA1:file.txt`
+
+### Show staged version
+`git show :0:file.txt`
+
+### What is really versionned
+`git show HEAD:`
+
+### What is the content of this file 10 commits ago
+`git show HEAD~10:README.md`
+
 
 Search
 --------------
@@ -96,6 +117,9 @@ Search
 ### Find a String in the Entire Git History
 `git rev-list --all | xargs git grep -F '<YOUR STRING>'`
 
+### Show only what has changed in a single method !
+`git log -L :method-name:file`
+
 Differences
 --------------
 
@@ -104,6 +128,12 @@ git diff -w
 
 ### Show white-space (all characters)
 git diff --word-diff-regex=.
+
+### Show how directories have changed
+`git diff --dirstat=5 HEAD~100`
+
+### Show how directories have changed in a specific directory
+`git diff --dirstat=5 HEAD~100 -- src`
 
 ### View changes in a file
 `git log -p FILE`
