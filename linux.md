@@ -157,6 +157,9 @@ or
 ### Show current connections opened
 `lsof -i`
 
+### Show which PID is using socket 9876
+`lsof -i TCP:9876`
+
 ### Show current connections opened in real time
 `iftop`
 
