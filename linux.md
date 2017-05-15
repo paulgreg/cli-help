@@ -140,6 +140,22 @@ Web relatives
 `curl --verbose --header 'Host: www.example.com' 'http://10.1.1.36:8000/path'`
 
 
+Security relatives
+---------------
+
+### Show certificate informations
+`openssl x509 -in ca.pem -inform pem -noout -text`
+
+### Extract the public key from a private key
+`openssl rsa -in privkey.pem -pubout > key.pub`
+
+### Check certificate expiration
+`echo | openssl s_client -connect fr.mappy.com:443 2>/dev/null | openssl x509 -noout -enddate`
+
+### Inspect a certicate (pem)
+`openssl x509 -in GandiStandardSSLCA2.pem -inform pem -noout -text`
+
+
 Network relatives
 ---------------
 
@@ -177,19 +193,6 @@ or
 
 ### Know who are blocking thoses ports
 `netstat -tulpn`
-
-
-Security relatives
----------------
-
-### Show certificate informations
-`openssl x509 -in ca.pem -inform pem -noout -text`
-
-### Extract the public key from a private key
-`openssl rsa -in privkey.pem -pubout > key.pub`
-
-### Inspect a certicate (pem)
-`openssl x509 -in GandiStandardSSLCA2.pem -inform pem -noout -text`
 
 
 Media relatives
