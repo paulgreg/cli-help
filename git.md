@@ -22,9 +22,8 @@ Commits
 ### Reset to origin
 `git reset --hard origin/master`
 
-### Push a single commit
+### Push until a commit
 `git push origin SHA1:master`
-
 
 Add
 --------------
