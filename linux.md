@@ -78,6 +78,12 @@ Find relatives
 ### find what directory uses the most inodes
 `find / -xdev -printf '%h\n' | sort | uniq -c | sort -k 1 -n`
 
+### to recursively give directories read & execute privileges
+`find /path/to/base/dir -type d -exec chmod 755 {} +`
+
+### to recursively give files read privileges
+`find /path/to/base/dir -type f -exec chmod 644 {} +`
+
 
 Sed relatives
 --------------
@@ -164,7 +170,7 @@ Network relatives
 
 ### Capture web traffic
 ` ngrep -d eth0 -q -W byline port 80`
-or 
+or
 `sudo httpry -i eth0`
 
 ### Throttle a program
