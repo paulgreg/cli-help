@@ -1,8 +1,7 @@
 Linux commands
 ==============
 
-
-zsh relatives
+zsh
 --------------
 
 ### Delete last word from command line
@@ -60,7 +59,7 @@ zsh relatives
 `dict someName`
 
 
-Find relatives
+Find
 --------------
 
 ### find string in file
@@ -85,14 +84,14 @@ Find relatives
 `find /path/to/base/dir -type f -exec chmod 644 {} +`
 
 
-Sed relatives
+Sed
 --------------
 
 ### search and replace in files
 `sed -i 's/SEARCH/REPLACE/g' **/*.txt`
 
 
-File relatives
+File
 --------------
 
 ### List directories size (with sort)
@@ -114,7 +113,7 @@ File relatives
 `pv -tpreb image-file.img | sudo dd of=/dev/sdb`
 
 
-Archive relatives
+Archive
 --------------
 
 ### List files in a tar.gz
@@ -127,7 +126,7 @@ Archive relatives
 `tar czvf archive.tar.gz path/`
 
 
-Web relatives
+Web
 --------------
 
 ### Check status of all link from a web page or rss feed
@@ -146,8 +145,14 @@ Web relatives
 `curl --verbose --header 'Host: www.example.com' 'http://10.1.1.36:8000/path'`
 
 
-Security relatives
+Security
 ---------------
+
+### Encrypt via gpg
+`gpg --encrypt -r "identity" file.txt`
+
+### decrypt via gpg
+`gpg --decrypt file.txt.gpg > file.txt`
 
 ### Show certificate informations
 `openssl x509 -in ca.pem -inform pem -noout -text`
@@ -162,7 +167,7 @@ Security relatives
 `openssl x509 -in GandiStandardSSLCA2.pem -inform pem -noout -text`
 
 
-Network relatives
+Network
 ---------------
 
 ### SSH tunneling (distant port 6081 to local port 80)
@@ -201,7 +206,7 @@ or
 `netstat -tulpn`
 
 
-Media relatives
+Media
 ---------------
 
 ### resize images (by maximal width or height) using convert from imagemagick package
@@ -251,7 +256,7 @@ File renaming tips
 `for i in *jpg; do jhead -n%Y-%m-%d-%f $i; done`
 
 
-System relatives
+System
 -----------------
 
 ### Fetch missing APT keys
@@ -301,7 +306,7 @@ System relatives
 `sudo vgchange -a y`
 
 
-dmcrypt relatives
+dmcrypt
 -----------------
 
 ### Format a drive
@@ -333,7 +338,7 @@ dmcrypt relatives
 `sudo cryptsetup -v status mappingName`
 
 
-software RAID relatives
+software RAID
 -----------------
 
 ### Create a new RAID array
