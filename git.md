@@ -264,14 +264,13 @@ or
 Update all local projects
 --------------
 
-``!/bin/bash``
+`find -name .git -execdir git pull --rebase ";"`
 
-``for i in \`ls -d */\`; do``
 
-`` (echo Udating ${i} && cd ${i} && git pull --rebase)``
+Git GC on all git folder
+--------------
 
-``done``
-
+`find -name .git -execdir git gc ";"`
 
 Alias
 ------
