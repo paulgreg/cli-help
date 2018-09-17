@@ -247,6 +247,8 @@ Sharing tips
 
 ### Share current folder by HTTP
 `python -m SimpleHTTPServer`
+or
+`npm install -g http-server` & `http-server .`
 
 
 File renaming tips
@@ -258,6 +260,13 @@ File renaming tips
 
 System
 -----------------
+
+### Install package if not installed
+
+    if [ $(dpkg-query -W -f='${Status}' nano 2>/dev/null | grep -c "ok installed") -eq 0 ];
+    then
+      sudo apt install nano;
+    fi
 
 ### Fetch missing APT keys
 `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv- keys MISSING_KEY_ID`
