@@ -205,6 +205,8 @@ or
 ### Know who are blocking thoses ports
 `netstat -tulpn`
 
+### Discover hosts on local network
+`nmap -sP 192.168.0.0/24`
 
 Media
 ---------------
