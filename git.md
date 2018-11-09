@@ -152,6 +152,9 @@ git diff --word-diff-regex=.
 ### View differences from 2 branches on current path
 `git diff first-branch second-branch -- .`
 
+### View differences in 2 distinct files
+`git diff --no-index file otherfile`
+
 ### View changes between your branch and remote branch
 `git diff master origin/master`
 
