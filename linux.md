@@ -166,6 +166,9 @@ Security
 ### Inspect a certicate (pem)
 `openssl x509 -in GandiStandardSSLCA2.pem -inform pem -noout -text`
 
+### Check OSCP stapling
+`echo QUIT | openssl s_client -connect www.google.com:443 -status 2> /dev/null | grep -A 17 'OCSP response:' | grep -B 17 'Next Update'`
+
 
 Network
 ---------------
