@@ -219,6 +219,9 @@ Media
 or
 `find /path/to/your/image -type f -iname "*.jpg" -exec convert -resize 2048x2048\> {} {} \;`
 
+### rename image with date / time
+`exiftool -ext jpg '-FileName<CreateDate' -d %Y_%m_%d__%H_%M_%S%%-c.%%e .`
+
 ### erase a CDRW
 `sudo cdrecord blank=all -immed dev=/dev/cdrw`
 
