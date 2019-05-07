@@ -2,7 +2,7 @@ Varnish commands
 ==============
 
 ### Check config syntax
-`varnishd -C -f /etc/varnish/config.vcl`
+`varnishd -C -f /etc/varnish/default.vcl`
 
 ### Varnish histogram to show hit/miss
 `varnishhist`
