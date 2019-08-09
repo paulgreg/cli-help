@@ -109,6 +109,9 @@ File
 ### Move file to trash
 `gvfs-trash filename`
 
+### dd with progress indicator
+`sudo dd if=ubuntu-18.04.3-desktop-amd64.iso of=/dev/sdb bs=4M status=progress oflag=sync`
+
 ### Raw copy using pv to watch the progress
 `pv -tpreb image-file.img | sudo dd of=/dev/sdb`
 
