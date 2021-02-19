@@ -91,6 +91,13 @@ Sed
 `sed -i 's/SEARCH/REPLACE/g' **/*.txt`
 
 
+Awk
+--------------
+
+### Compute average on a list of numbers
+` awk '{ total += $1; count++ } END { print total/count }' data.txt`
+
+
 File
 --------------
 
