@@ -7,11 +7,11 @@ Varnish commands
 ### Varnish histogram to show hit/miss
 `varnishhist`
 
+### Varnish top URL
+`varnishtop -i ReqURL`
+
 ### Varnish log
 `varnishlog`
-
-### Varnish top
-`varnishtop`
 
 ### Filter only some URL
 `varnishlog  -q 'ReqURL ~ "^/someurl"'`
