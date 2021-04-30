@@ -114,8 +114,7 @@ File
 `gvfs-trash filename`
 
 ### dd with progress indicator
-`sudo dd if=ubuntu-18.04.3-desktop-amd64.iso of=/dev/sdb bs=4M status=progress oflag=sync`
-
+`sudo dd if=./ubuntu-20.04.2.0-desktop-amd64.iso of=/dev/sdb bs=4M status=progress && sync`
 
 File renaming tips
 ------------
@@ -303,7 +302,7 @@ Sharing tips
 ### Share a file via HTTP
 `nc -v -l 8080 < file_to_share`
 
-### Share current folder by HTTP 
+### Share current folder by HTTP
 `npx http-server -a localhost .`
 
 or
