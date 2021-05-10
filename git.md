@@ -9,6 +9,16 @@ Config
 ### Set colors
 `git config color.ui true`
 
+### Configure git to sign commit by default
+```
+gpg --full-gen-key # generate key
+gpg --list-secret-keys --keyid-format LONG <your-email>
+# copy XXX part of « sec   rsa3072/XXX 2021-04-27 [SC] »
+gpg --armor --export XXX
+# then paste on github/gitlab
+git config --global user.signingkey XXX # associate that key to commit
+git config --global commit.gpgsign true # enable commit signing by default
+```
 
 Commits
 --------------
