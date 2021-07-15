@@ -197,6 +197,12 @@ Security
 ### decrypt via gpg
 `gpg --decrypt file.txt.gpg > file.txt`
 
+### List personals keys
+`gpg --list-secret-keys --keyid-format LONG`
+
+### Export public key
+`gpg --armor --export YOUR_KEY_ID > public-key.asc`
+
 ### Show certificate informations
 `openssl x509 -in ca.pem -inform pem -noout -text`
 
