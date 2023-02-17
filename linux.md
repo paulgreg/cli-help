@@ -169,6 +169,13 @@ or
 `zbarimg img.png`
 
 
+PDF
+-----
+
+### Agregate PDFs
+`pdftk pdf_file_1 pdf_file_2 cat output final_pdf_file`
+
+
 Web
 --------------
 
