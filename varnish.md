@@ -17,7 +17,7 @@ Varnish commands
 `varnishlog  -q 'ReqURL ~ "^/someurl"'`
 
 ### Show 50x errors
-`varnishlog -q 'RespStatus >= 500 or BerespStatus >= 500"'`
+`varnishlog -q 'RespStatus >= 500 or BerespStatus >= 500'`
 
 ### Show backend (probe) status
 via `varnishstat`
