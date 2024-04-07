@@ -157,7 +157,10 @@ or
 `mount -o loop -t iso9660 file.iso /media/iso`
 
 ### extract audio from a video (without reencoding it)
-`ffmpeg -i mandelbrot.flv -vn -acodec copy mandelbrot.mp3`
+`ffmpeg -i video.flv -vn -acodec copy audio.mp3`
+
+### extract audio from a video
+`ffmpeg -i video.mp4 -q:a 0 -map a audio.mp3`
 
 ### do a screenshot later
 `gnome-panel-screenshot --delay 5`
