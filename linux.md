@@ -138,6 +138,9 @@ Archive
 ### Create a tar.gz archive
 `tar czvf archive.tar.gz path/`
 
+### Extract xz archive while keeping compressed file
+`xz --decompress --keep 2024-11-19-raspios-bookworm-armhf.img.xz`
+
 
 Media
 ---------------
