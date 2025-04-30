@@ -306,6 +306,13 @@ or
 `nmap -sP 192.168.0.0/24`
 
 
+Nginx
+-------------
+
+### order 404
+`zgrep ' 404 ' /var/log/nginx/access.log.*gz | awk '{print $7}' | sort | uniq -c | sort -nr | less`
+
+
 MySQL
 -------------
 ### Default path to MySQL databases
