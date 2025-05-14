@@ -174,6 +174,9 @@ or
 ### extract qr code
 `zbarimg img.png`
 
+### Set album in mp3 tags
+`id3tool -a AlbumName *.mp3`
+
 
 PDF
 -----
