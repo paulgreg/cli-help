@@ -116,6 +116,7 @@ File
 ### dd with progress indicator
 `sudo dd if=./ubuntu-20.04.2.0-desktop-amd64.iso of=/dev/sdb bs=4M status=progress && sync`
 
+
 File renaming tips
 ------------
 
@@ -392,6 +393,36 @@ System
 
 ### system info
 `sudo apt-get install screenfetch && screenfetch`
+
+
+Disk
+-----------------
+
+## Smart tests
+`sudo smartctl -t {short/long/conveyance} /dev/sdX`
+
+## Smart status check
+`sudo smartctl -a /dev/sdX`
+ 
+### Badblocks (read only)
+`sudo badblocks -sv /dev/sdX`
+
+### Badblocks (write/read - non desctructive)
+`sudo badblocks -nsv /dev/sdX`
+
+### Badblocks (desctructive !)
+`sudo badblocks -wsv /dev/sdX`
+
+### Check alignment
+`parted /dev/sdX align-check optimal 1`
+
+### Realign (it’s destructive !)
+
+    sudo parted /dev/sdX
+    mklabel gpt # recreate gpt partition table
+    mkpart primary 1MiB 100%
+    align-check optimal 1
+
 
 
 software RAID
