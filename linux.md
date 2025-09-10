@@ -394,6 +394,12 @@ System
 ## clean old journalctl files
 `journalctl --vacuum-time=10d`
 
+## Look and set default apps
+
+    gio mime inode/directory # to inspect
+    gio mime inode/directory org.gnome.Nautilus.desktop # to set
+
+
 
 Disk
 -----------------
