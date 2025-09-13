@@ -409,15 +409,15 @@ Disk
 
 ## Smart status check
 `sudo smartctl -a /dev/sdX`
- 
+
 ### Badblocks (read only)
-`sudo badblocks -sv /dev/sdX`
+`sudo badblocks -sv -b 4096 /dev/sdX`
 
 ### Badblocks (write/read - non desctructive)
-`sudo badblocks -nsv /dev/sdX`
+`sudo badblocks -nsv -b 4096 /dev/sdX`
 
 ### Badblocks (desctructive !)
-`sudo badblocks -wsv /dev/sdX`
+`sudo badblocks -wsv -b 4096 /dev/sdX`
 
 ### Check alignment
 `parted /dev/sdX align-check optimal 1`
