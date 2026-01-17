@@ -157,6 +157,9 @@ or
 ### erase a CDRW
 `sudo cdrecord blank=all -immed dev=/dev/cdrw`
 
+### convert wav to mp3
+`ffmpeg -i input.wav -vn -ar 44100 -ac 2 -b:a 192k output.mp3`
+
 ### mount an Iso file
 `mount -o loop -t iso9660 file.iso /media/iso`
 
