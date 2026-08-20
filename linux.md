@@ -58,6 +58,9 @@ zsh
 ### Search in a dictionnary
 `dict someName`
 
+### copy command output into clipboard
+`ls | xclip -selection clipboard  `
+
 
 Find
 --------------
