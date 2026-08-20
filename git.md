@@ -126,6 +126,9 @@ Search
 ### Find a String in the Entire Git History
 `git rev-list --all | xargs git grep -F '<YOUR STRING>'`
 
+### Find when a line has been added/removed in a file
+`git log -S'"sharp"' --oneline -- package.json`
+
 ### Show only what has changed in a single method !
 `git log -L :method-name:file`
 
